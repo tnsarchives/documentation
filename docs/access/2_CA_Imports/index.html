@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Collective Access Imports · The New School</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Import Data and Media"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Collective Access Imports · The New School"/><meta property="og:type" content="website"/><meta property="og:url" content="https://tnsarchives.github.io/documentation/index.html"/><meta property="og:description" content="## Import Data and Media"/><meta property="og:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://tnsarchives.github.io/documentation/blog/atom.xml" title="The New School Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://tnsarchives.github.io/documentation/blog/feed.xml" title="The New School Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/docusaurus.svg" alt="The New School"/><h2 class="headerTitleWithLogo">The New School</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/documentation/docs/acquisition/1_acquisition_overview" target="_self">Acquisition</a></li><li class=""><a href="/documentation/docs/processing/1_overview" target="_self">Processing</a></li><li class=""><a href="/documentation/docs/description/1_overview" target="_self">Description</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/access/1_overview" target="_self">Access</a></li><li class=""><a href="/documentation/help" target="_self">Help</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Access</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Access</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/1_overview">Overview</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/access/2_CA_Imports">Collective Access Imports</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Collective Access Imports</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="import-data-and-media"></a><a href="#import-data-and-media" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Import Data and Media</h2>
+<ol>
+<li>[Batch] Review Data Files for import<br>
+Details for formatting metadata: Workflow for: Creating Metadata for Digitized Material
+Files for import will be placed in relevant staging areas: Digitized_from_Analog_WorkingFiles OR Digital_accessions_to_be_processed</li>
+<li>Move Preservation Files
+TIFFs and non-access formats go to corresponding folder in K:\preservation</li>
+<li>[Batch] Batch Change Media with Multiple Files
+This will need to happen for records with multiple files associated with the same record (such as, photographs with recto/verso). Collective Access import will only recognize filenames with one underscore (_). Appended pages will need to follow a period, for example: KA00140_00004.pg002.jpg / not KA00140_00004_pg002.jpg.</li>
+</ol>
+<p>Windows</p>
+<ol>
+<li>Open Bulk Rename Utility</li>
+<li>Select folder with files to be batch changed</li>
+<li>Settings
+Example: KA00140_00004_pg002.jpg to KA00140_00004.pg002.jpg
+Repl. (3) - Replace _ With .
+Remove (5) - From 7 to 7 [or the character location of current file]
+Add (7) Insert _ at pos. 8 [or the character location of current file]
+Select 'Rename'
+This option is for large collections with files that contain multiple pages. Another way to import multiple files associated with one record without changing the filenames, is to import on a directory.</li>
+<li>[Batch] Import data into CollectiveAccess
+Login to the backend: <a href="http://digitalarchives.library.newschool.edu/admin">http://digitalarchives.library.newschool.edu/admin</a>
+Choose &quot;Import&quot; from the top menu and then select &quot;Data&quot; from the dropdown.
+Find the row for “Internal Scan Request Mapping” and click the far right icon for “Import data.”
+I usually perform a ‘dry run’ of the import first to see if any parts of the spreadsheet need to be edited.</li>
+<li>[Batch] Create a Set<br>
+Find &gt; Objects &gt; Search on collection identifier then ‘Refine’ results by selecting records with restricted access (new records import automatically as ‘restricted’)
+Save 'Set' with newly imported records as ‘MM-DD-YY [Collection ID] Import.’
+After reviewing for potential edits, perform batch updates.
+Potential Batch Updates:
+Collection (add a Series, if applicable)
+Access (accessible to public)
+Minimum Standards Met</li>
+<li>Import Media
+Transfer Files
+Open program Secure Shell Client.</li>
+</ol>
+<p>If logging in for the first time, set up a new profile:
+Click Profiles &gt; Add Profile</p>
+<p>Name the profile after the administrator. Press okay.</p>
+<p>Host name: digitalarchives.library.newschool.edu
+User name: TNS web ID of the administrator with access (adm_martinezk)
+Port number: 22</p>
+<p>Select Window &gt; New File Transfer.
+In new window, remove contents of the finder bar and replace with /collectiveaccess/app/public_html/admin/import/ to reach the collective access directory.
+Here, create folders for content to be imported.
+Separate large collections of large files, such as multi-page pdfs, into smaller groups that may be imported 30 files or less at a time.</p>
+<p>Remove folder contents, then folders, once the import process is complete. This helps avoid confusion and keeps the workspace clean.
+Import into CA
+Login to CA at <a href="http://digitalarchives.library.newschool.edu/admin/">http://digitalarchives.library.newschool.edu/admin/</a>
+Select Import &gt; Media
+Select folder created in the import directory
+Confirm settings before importing:
+Import mode: “Import only Media that can be matched with existing records.”
+Select object type.
+Choose access settings.
+Show advanced options &gt; Select match using directory name or filename
+Execute media import</p>
+<ol start="6">
+<li>Update Featured Topics, if relevant</li>
+<li>Move Access Files
+JPEGs and PDFs go to corresponding folder in K:\working_files\Dig_images_access</li>
+<li>Move finalized data spreadsheet
+K:\working_files\Central_Kellen_share\Digital Archives\Digital_CollectiveAccess\Import\Data</li>
+<li>Update Archivists’ Toolkit</li>
+<li>Review Completed Import
+Check relationship types to see that description is accurate for non-designer or non-commissioner roles
+Make any new entities accessible to public through batch change
+Review media for missing data
+Check that PDFs can be searched, if applicable
+Check that media plays correctly, if applicable
+Check ‘minimum standards met’ for all records through batch
+Check that dates are correct for non YYYY formats
+If new collections are added, update AT as needed</li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="batch-updates"></a><a href="#batch-updates" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Batch Updates</h2>
+<ol>
+<li>Create a Set
+Select the records you would like to include by performing a search. In this example, we search on the base identifier.
+In the upper right corner, select ‘Find’ &gt; ‘Objects’
+Search: [NS021201] &gt; Click ‘Search’
+After results are returned, select ‘Set Tools’ from the left menu
+Select ‘Create Set’ and use the dialog box to name your set. You’ll see a dropdown menu that allows you to add records from the search results, or from checked records. Clicking the box ‘Open set for batch editing’ will automatically open batch editing for this set. If that option is selected, the next step can be skipped.</li>
+<li>Batch Edit a Set
+In the upper right menu, select ‘Manage’ and then ‘My sets.’ Locate your new set and select the files icon in the ‘# Items’ column to batch edit the records.
+Choose the field you would like to edit, selecting ‘add to each item,’ ‘replace value,’ or ‘remove all values’
+Click ‘Execute Batch Edit’</li>
+</ol>
+<p>Backend Searching
+<a href="https://docs.collectiveaccess.org/wiki/Search_Syntax#Searching_for_blank_values">https://docs.collectiveaccess.org/wiki/Search_Syntax#Searching_for_blank_values</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/access/1_overview"><span class="arrow-prev">← </span><span>Previous</span></a></div></div></div><nav class="onPageNav docOnPageNav"><ul class="toc-headings"><li><a href="#import-data-and-media">Import Data and Media</a></li><li><a href="#batch-updates">Batch Updates</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/docusaurus.svg" alt="The New School" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>
