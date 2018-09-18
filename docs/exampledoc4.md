@@ -1,6 +1,6 @@
 ---
 id: doc4
-title: Other Document
+title: Numbering and Labeling
 ---
 
 this is another document
