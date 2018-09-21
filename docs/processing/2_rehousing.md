@@ -18,11 +18,8 @@ The size of the folders used determines the size of the box. The folder should f
 
 Tube (no abbreviation). As a last resort for items that are too big for the flat files, we will roll them up and store them in tubes. These are primarily used for posters.
 
-This is a link to [another document.](doc3.md)  
-This is a link to an [external page.](http://www.example.com)
-
 ## Mixed boxes
-Mixed boxes are used to hold material that takes up much less than a whole box. Mixed boxes are particularly helpful for housing oversized items if there are only a few of them in the collection. For instructions on adding material to a mixed box see “Workflow for: Archivists Toolkit Processes.”
+Mixed boxes are used to hold material that takes up much less than a whole box. Mixed boxes are particularly helpful for housing oversized items if there are only a few of them in the collection. For instructions on adding material to a mixed box see [Archivists' Toolkit Processes.](topics/1_AT_processes.md)
 
 ## Folders
 Use legal-size folders with legal-size boxes and letter-size folders with letter-size boxes; do not put letter-size folders in legal-size boxes. The folders will shift or slide during movement if there is significant space within the box, contributing to wear on the contents.
@@ -32,5 +29,29 @@ Archival materials should not slump over in their folders. If they do, it means 
 Please note that we do not always transfer records into archival folders. This decision is made on a case-by-case basis depending on the age and condition of the records, among other factors. Do not transfer records into archival folders unless instructed to do so.
 
 ## Box openings and folder orientations
+
+### Flat boxes with flaps that open on the side (the long side):
+![flat box with side flap](assets/flat_boxes_side_flap.png)
+**Box flap opens to the left.**
+Folded side of folder is oriented left, **closest to the flap opening.**
+
+### Flat boxes that open on the front (the short side):
+![flat box with front flap](assets/flat_boxes_open_front.png)
+**Folded side of folder is oriented left.**
+
+## Items inside folders
+Photos and images should all be oriented so that the image *is not upside down when the folder is opened.* Images oriented on their sides within the folder, should always *face the same direction, with the top of the image at the left (and if there is text on the page, the top of the page faces left).*
+
+Holding folder upright, papers/photos/all materials lying sideways in the folder should have their top toward the left of the folder; materials not lying on their side should have their top toward the top of the folder.
+
+![folder contents](assets/folder_contents.png)
+
+In general, put smaller materials up front in folders. Very small materials should be enclosed in a mini-folder made from interleaving paper.
+
+## Map Case Folder Orientation
+For oversize materials that live in the map case (aka flat files), in terms of orientation, each folder should be placed with in flap towards the rear of the drawer.
+
+
+
 
 
