@@ -10,11 +10,13 @@
     "Scan Requests": ["processing/11_scan_requests"]
   },
    "description": {
-    "Description": ["description/1_overview", "description/2_Collection_Level", "description/3_Create_Digital_File_List", "description/4_Component_Level", "description/5_Digital_Material", "description/6_Weeding", "description/7_Restricted_Material", "description/8_Style_Guide"], 
-    "Finding Aid": ["description/9_Finding_Aid_Checklist", "description/10_Export_Publish_Finding_Aid"], 
-    "Collective Access": ["description/11_Create_Batch_Metadata_CA"]
+    "Description": ["description/1_overview"],
+    "Archivists' Toolkit": ["description/2_AT_overview", "description/3_collection_level", "description/4_component_level", "description/5_digital_material", "description/6_restricted_material", "description/7_style_guide"], 
+    "Finding Aid": ["description/8_finding_aid_checklist", "description/9_export_publish_finding_aid"]
   }, 
    "access": {
-    "Access": ["access/1_overview", "access/2_CA_Imports"]
+    "Access": ["access/1_overview"], 
+    "Digitization": ["access/2_scan_tech_procedures", "access/3_digitize_standard_doc", "access/4_digitize_slides", "access/5_calibrate_scanner", "access/6_create_access_files"],
+    "Collective Access": ["access/7_batch_metadata_CA", "access/8_imports_CA", "access/9_batch_updates_CA"]
   }
 }

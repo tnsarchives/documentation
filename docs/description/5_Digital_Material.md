@@ -1,5 +1,5 @@
 ---
-id: 5_Digital_Material 
+id: 5_digital_material 
 title: Digital Material
 ---
 
@@ -10,4 +10,3 @@ As regards describing digital material in AT, for removal media, add a note in R
 If digital files have not yet been processed when finding aid is published, indicate in collection-level processing note that digital files are in process. If disk [or box/folder of disks] are not associated with a folder, create a separate item-level component with the disk identifier within the resource record -- associate with an existing series if one can be determined, otherwise create temporary disks series.
 
 For instructions on how to associate digital objects on Collective Access with the finding aid for that collection, see section “Other Finding Aids Note.”
-
