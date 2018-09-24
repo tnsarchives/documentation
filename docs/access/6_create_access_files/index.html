@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Create Access Files · The New School</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Single JPEGs"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Create Access Files · The New School"/><meta property="og:type" content="website"/><meta property="og:url" content="https://tnsarchives.github.io/documentation/index.html"/><meta property="og:description" content="Single JPEGs"/><meta property="og:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://tnsarchives.github.io/documentation/blog/atom.xml" title="The New School Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://tnsarchives.github.io/documentation/blog/feed.xml" title="The New School Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/docusaurus.svg" alt="The New School"/><h2 class="headerTitleWithLogo">The New School</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/documentation/docs/acquisition/1_acquisition_overview" target="_self">Acquisition</a></li><li class=""><a href="/documentation/docs/processing/1_overview" target="_self">Processing</a></li><li class=""><a href="/documentation/docs/description/1_overview" target="_self">Description</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/access/1_overview" target="_self">Access</a></li><li class=""><a href="/documentation/help" target="_self">Help</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Digitization</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Access</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/1_overview">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Digitization</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/2_scan_tech_procedures">Scan Tech Procedures</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/3_digitize_standard_doc">Digitize Standard Documents</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/4_digitize_slides">Digitize Standard Documents</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/5_calibrate_scanner">Calibrate Scanner</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/access/6_create_access_files">Create Access Files</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Collective Access</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/7_batch_metadata_CA">Create Batch Metadata</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/8_imports_CA">Create Records</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/9_batch_updates_CA">Batch Updates</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Create Access Files</h1></header><article><div><span><p>Single JPEGs
+Note: Create JPEGs for any scans that are two pages or less and do not have significant printed text. For documents with significant printed text, and/or documents that are longer than two pages, create access PDFs following instructions below.</p>
+<ol>
+<li>Open each scanned TIFF in Adobe Photoshop, use the Crop Tool to select the material, leaving a little bit of space but cutting off the targets.</li>
+<li>Select the &quot;File&quot; menu then choose &quot;Save as.&quot;
+Leave the filename the same and choose JPEG from the ‘format’ dropdown menu
+Save file
+Select ‘12’ for Quality (Maximum) and make sure ‘Baseline (“Standard”)’ is selected under ‘Format Options’ then click OK.</li>
+<li>You should end up with a TIFF including targets and a cropped JPEG without targets for each scan (and they should have the same file name).</li>
+</ol>
+<p>Batch JPEGs</p>
+<ol>
+<li><p>Open Adobe Bridge CS5 (part of Adobe Design Standard CS5).
+The program opens up a window that shows folder navigation (at the top and left
+hand side), content – a selected location (in the middle), and a preview and
+metadata fields on the right. (The “Essentials” view – other views can be selected
+at the top right of the screen.)</p></li>
+<li><p>Navigate to the location of the files you which to convert from tiff to jpg.
+Using the folder structure on the left and/or the content window in the middle.</p></li>
+<li><p>Select the image/s you wish to run the conversion on.</p></li>
+<li><p>Go to Tools  Photoshop &gt; Image Processor
+This opens Adobe Photoshop CS5</p></li>
+<li><p>Choose Image Processor settings
+Do not have to open the first image to apply settings but you can
+Select the location in which you want to save the jpgs (default is same folder)
+Choose the file type: Save as JPEG – Quality 12
+Under preferences, choose Include ICC Profile. (for color calibration)
+Click Run</p></li>
+<li><p>Adobe Photoshop will run through each selected photograph and do the conversion.</p></li>
+<li><p>When the conversion is complete, you can close Photoshop and Bridge and find your newly converted images in your specified location. They will be in a folder called “JPEG”.</p></li>
+</ol>
+<p>PDFs
+Note: Create access PDFs for any scan with significant text.</p>
+<ol>
+<li>Open Adobe Acrobat and choose the task “Combine Files into PDF.” [or File – Create – Create – Combine Files into PDF]</li>
+<li>Select the TIF files for each scanned page in a document and click add files.</li>
+<li>Once preview thumbnail images of each page have loaded, click the “Combine Files” button in the bottom right corner.</li>
+<li>A PDF should open with the combined pages in a single document.
+Stop. Check your work! Make certain that all TIF files have been combined in the PDF and that they are in correct order. Adobe sometimes leaves out pages or rearranges.</li>
+<li>If the document contains printed text select “Tools” from the right menu, then “Text Recognition” then “In this File.” Then select “All pages” and click “OK.” (If it only contains handwritten text, this step is not necessary.) [check text] [or Enhance Scans]</li>
+<li>Highlight text to ensure it has been recognized</li>
+<li>Click File - Save and assign the document the base file name of each of the page files (ex: NS030105_000198_pg001.tif and NS030105_000198_pg002.tif would become NS030105_000198.pdf).</li>
+<li>Then click File - Save as other - Optimized PDF. In the PDF Optimizer window, uncheck all options in the left pane and under “Make compatible with:” choose “Acrobat 5.0 and later” from the dropdown list. Then click OK and choose Yes to overwrite existing file.
+The file should now be ready to upload with searchable text in CollectiveAccess.
+For documents 400 pages or more, break into parts.
+If you encounter a document with printed text in CollectiveAccess that does not include a search bar, follow steps 5-7 above and re-upload.
+Filenames
+Creating digital folders that reference physical folders:</li>
+</ol>
+<p>Material from the same collection should go in a collection level folder:</p>
+<p>Documents that have multiple pages, including instances in which a scan is needed of front and back, should be marked with an underscore and sequential page numbers:</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/access/5_calibrate_scanner"><span class="arrow-prev">← </span><span>Previous</span></a><a class="docs-next button" href="/documentation/docs/access/7_batch_metadata_CA"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/docusaurus.svg" alt="The New School" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>

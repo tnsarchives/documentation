@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Create Batch Metadata · The New School</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="There are two templates to use for importing data when batch creating new records. Batch Imports only occur when more than 10 digital files need to be uploaded to Collective Access."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Create Batch Metadata · The New School"/><meta property="og:type" content="website"/><meta property="og:url" content="https://tnsarchives.github.io/documentation/index.html"/><meta property="og:description" content="There are two templates to use for importing data when batch creating new records. Batch Imports only occur when more than 10 digital files need to be uploaded to Collective Access."/><meta property="og:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://tnsarchives.github.io/documentation/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://tnsarchives.github.io/documentation/blog/atom.xml" title="The New School Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://tnsarchives.github.io/documentation/blog/feed.xml" title="The New School Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/docusaurus.svg" alt="The New School"/><h2 class="headerTitleWithLogo">The New School</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/documentation/docs/acquisition/1_acquisition_overview" target="_self">Acquisition</a></li><li class=""><a href="/documentation/docs/processing/1_overview" target="_self">Processing</a></li><li class=""><a href="/documentation/docs/description/1_overview" target="_self">Description</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/access/1_overview" target="_self">Access</a></li><li class=""><a href="/documentation/help" target="_self">Help</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Collective Access</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Access</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/1_overview">Overview</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Digitization</h3><ul><li class="navListItem"><a class="navItem" href="/documentation/docs/access/2_scan_tech_procedures">Scan Tech Procedures</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/3_digitize_standard_doc">Digitize Standard Documents</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/4_digitize_slides">Digitize Standard Documents</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/5_calibrate_scanner">Calibrate Scanner</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/6_create_access_files">Create Access Files</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Collective Access</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/access/7_batch_metadata_CA">Create Batch Metadata</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/8_imports_CA">Create Records</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/access/9_batch_updates_CA">Batch Updates</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Create Batch Metadata</h1></header><article><div><span><p>There are two templates to use for importing data when batch creating new records. Batch Imports only occur when more than 10 digital files need to be uploaded to Collective Access.</p>
+<ul>
+<li>Standard Template: Batch_Upload_Template.xls</li>
+<li>Thesis Template: Batch_Upload_Thesis_Mapping_Template.xls
+Location: Central_Kellen_Share/DigitalArchives/Digital_CollectiveAccess/Import/Batch_Upload_Template.xls</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="creating-metadata"></a><a href="#creating-metadata" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating Metadata</h2>
+<p>Step 1: Prepare a metadata spreadsheet for Scan Tech to use while digitizing material
+Supervisory archivist will complete the following fields for Scan Tech before they begin digitizing material:</p>
+<p>Collection [Format:  Use collection or series identifier.]
+Example:
+Institute for Retired Professionals collection would be: NS022101
+Report of the Commission on Older Students at the New School for Social Research series would be:  NS022101_000006</p>
+<p>Step 2: Scan Tech completes fields while scanning
+In the interest of quality control, descriptive metadata should be created by a worker other than the Scan Tech. The only fields to be completed by the Scan Tech while digitizing, will be:
+Media Filename
+The filename is derived from the resource identifier created in Archivists’ Toolkit (Resources &gt; Series &gt; Resource Identifier).
+Sample Resource Identifier: NS.03.01.05
+Sample Filename: NS030105_000173 (000173 scan number)
+Multi-page documents will have pages added with an underscore
+Sample Filename: NS030105_000173_pg01
+Sample Filename: NS030105_000173_pg02</p>
+<p>box #, folder # (if applicable)</p>
+<p>Step</p>
+<p>While completing the batch upload spreadsheet described below, worker should simultaneously check accuracy and quality of file. QA Checklist:
+Review that all pages are present
+Confirm whether any images are missing data
+Check that pages do not need to be rotated, etc.
+Template
+When there are enough files being digitized to warrant a batch upload, Archivist sets up a spreadsheet.<br>
+Fields</p>
+<ol>
+<li>Collection
+Format:  Use collection or series identifier. For example:
+Collection: Institute for Retired Professionals collection &gt; NS022101
+Series: Report of the Commission on Older Students at the New School for Social Research &gt; NS022101_000006</li>
+<li>Skip</li>
+<li>Object Type
+2d/3d
+photo_materials
+posters
+posters/fliers
+drawings
+drawings/paintings/prints
+sketchbooks
+proof
+text
+clippings
+clippings/tear sheets
+plan
+other
+3d</li>
+</ol>
+<p>Publications
+course_catalog
+exhibition_catalog
+book
+periodical
+score
+Albums/Scrapbooks
+album_clipping
+photograph
+mixed</p>
+<ol start="4">
+<li>Worktype</li>
+</ol>
+<p>clippings
+clippings
+tear
+tear sheets
+course_catalogs
+catalogs
+course catalogs/bulletins
+bulletins
+exhibition_catalog
+exhibition_catalogs
+book
+books
+periodical
+periodicals
+posters
+posters
+fliers
+sketchbooks
+journals
+sketchbooks
+notebook
+text
+agreements
+charts
+speeches
+correspondence
+records
+minutes
+reports
+financial_records
+press_releases
+notes
+school_records
+manuscripts<br>
+transcripts
+business_cards<br>
+bookplates
+pamphlets
+typescripts
+visual_aids
+maps
+invitations
+press_kits
+biographies
+lists
+drawings
+drawings
+collages
+intaglio
+intaglio prints
+monoprints
+planographic_prints
+relief_prints
+screen_prints
+design_drawings
+measured_drawings
+preliminary_drawings
+presentation_drawings
+technical_drawings
+working_drawings
+pastels
+Sketches
+proof
+proofs
+printed matter
+dummies
+printed matter
+copy
+production stage
+camera
+camera-ready copy
+layouts
+mechanicals
+bluelines
+galley_proofs
+page_proofs
+photo_materials
+negatives
+contact_sheets
+digital_images
+prints
+slides
+transparencies
+score
+scores
+plan
+plans
+album_clipping/mixed
+scrapbooks
+photograph [album]
+photograph_albums
+3d
+banners
+jewel_cases
+medals
+mugs
+patterns
+perfume
+perfume bottles
+scarves
+swatches
+tags
+models
+(representations)
+napkins
+plates
+(dishes)
+printing_blocks
+printing_plates
+projectors
+stamps
+stencils
+trophies
+yarn
+thread
+buttons
+(fasteners)
+buttons_info
+(information artifacts)
+card_files
+masks
+(costume)
+tshirts</p>
+<ol start="5">
+<li>Media Filename
+The filename is derived from the resource identifier created in Archivists’ Toolkit (Resources &gt; Series &gt; Resource Identifier).
+Sample Resource Identifier: NS.03.01.05
+Sample Filename: NS030105_000173 (000173 scan number)
+Multi-page documents will have pages added with an underscore
+Sample Filename: NS030105_000173_pg01
+Sample Filename: NS030105_000173_pg02</li>
+<li>Title: see cataloguing directions</li>
+<li>Date
+Accepted
+Nov 1 1976 for single dates, always use first three letters of month
+1 Nov 1976
+1976
+1970s
+1970-1979
+circa 1940 do not abbreviate to “ca.”
+after 1940
+circa 1970 - 1989
+Mar 1976</li>
+</ol>
+<p>Not accepted
+4 Dec 1946 - 8 Dec 1946 (will change to &gt; 4 Dec - 8 Dec/1946)
+1976 Nov 1
+1920-1999, bulk 1989-1999
+before 1940 (will change to &gt; before 1940 CE)
+1941, 1952-1978
+1975, 2002
+1965-1978, 2001
+circa 1970-1979 (will change to &gt; 1970s)
+1970-circa 1979
+circa 1970s-circa 1990s
+1975/12/1
+02/05/1947 - 02/09/1947 (will change to &gt; 2 May - 2 Sept 1947)
+Undated</p>
+<ol start="8">
+<li><p>Box #, Folder #</p></li>
+<li><p>Photographer/Author (if known)</p></li>
+<li><p>Notes</p></li>
+<li><p>Relationship Type codes
+has as abridger (abridger)
+has as actor (actor)
+has as addressee (addressee)
+has as animator (animator)
+has as appellant (appellant)
+has as appellee (appellee)
+has as architect (architect)
+has as arranger of music (arranger_music)
+has as art director (art_director)
+has as artist (artist)
+has as author (author)
+has as cartographer (cartographer)
+has as choreographer (choreographer)
+has as commentator (commentator)
+has as commissioner (commissioner)
+has as compiler (compiler)
+has as composer (composer)
+has as conductor (conductor)
+has as contributor (contributor)
+has as costume designer (costume_designer)
+has as court governed (court_governed)
+has as court reporter (court_reporter)
+has as dancer (dancer)
+has as dedicatee (dedicatee)
+has as dedicator (dedicator)
+has as defendant (defendant)
+has as degree granting institution (degree)
+has as designer (designer)
+has as director (director)
+has as director of photography (director_photography)
+has as draftsman (draftsman)
+has as editor (editor)
+has as editor of compilation (editor_compilation)
+has as editor of moving image work (editor_moving_image)
+has as enacting jurisdiction (enacting_jurisdiction)
+has as film director (film_director)
+has as film producer (film_producer)
+has as filmmaker (filmmaker)
+has as honouree (honouree)
+has as host (host)
+has as host institution (host_institution)
+has as illustrator (illustrator)
+has as inscribed by (inscriber)
+has as instrumentalist (instrumentalist)
+has as interviewee (interviewee)
+has as interviewer (interviewer)
+has as inventor (inventor)
+has as issuing body (issuing_body)
+has as judge (judge)
+has as jurisdiction governed (jurisdiction_governed)
+has as landscape architect (landscape_architect)
+has as librettist (librettist)
+has as lyricist (lyricist)
+has as moderator (moderator)
+has as musical director (musical_director)
+has as narrator (narrator)
+has as on-screen presenter (onscreen_presenter)
+has as panelist (panelist)
+has as performer (performer)
+has as photographer (photographer)
+has as plaintiff (plaintiff)
+has as praeses (praeses)
+has as presenter (presenter)
+has as producer (producer)
+has as production company (production_company)
+has as production designer (production_designer)
+has as programmer (programmer)
+has as publisher (publisher)
+has as puppeteer (puppeteer)
+has as radio director (radio_director)
+has as radio producer (radio_producer)
+has as recording engineer (recording_engineer)
+has as recordist (recordist)
+has as respondent (respondent)
+has as rights holder (rights_holder)
+has as screenwriter (screenwriter)
+has as sculptor (sculptor)
+has as singer (singer)
+has as speaker (speaker)
+has as sponsoring body (sponsoring_body)
+has as stage director (stage_director)
+has as storyteller (storyteller)
+has as subject (subject)
+has as surveyor (surveyor)
+has as teacher (teacher)
+has as television director (television_director)
+has as television producer (television_producer)
+has as transcriber (transcriber)
+has as translator (translator)
+has as writer of added commentary (writer_added_commentary)
+has as writer of added lyrics (writer_added_lyrics)
+has as writer of added text (writer_added_text)</p></li>
+</ol>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/access/6_create_access_files"><span class="arrow-prev">← </span><span>Previous</span></a><a class="docs-next button" href="/documentation/docs/access/8_imports_CA"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"><ul class="toc-headings"><li><a href="#creating-metadata">Creating Metadata</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/docusaurus.svg" alt="The New School" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div></body></html>
